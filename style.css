@@ -1,0 +1,388 @@
+@font-face {
+  font-family: Gilroy-SemiBold;
+  src: url(Fonts/Gilroy-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Medium;
+  src: url(Fonts/Gilroy-Medium);
+}
+@font-face {
+  font-family: Gilroy-Black;
+  src: url(Fonts/Gilroy-Black.ttf);
+}
+
+@font-face {
+  font-family: Gilroy-Light;
+  src: url(Fonts/Gilroy-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Gilroy-SemiBold;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main {
+  width: 100%;
+  height:100vh;
+  background-color: #eef8ff;
+  position: relative;
+  overflow: hidden;
+}  
+nav {
+  display: flex;
+  width: 100%;
+  height: 10vh;
+}
+.lftnav,
+.rightnav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25vw;
+  height: 100%;
+  gap: 1.5vw;
+}
+.lftnav a {
+  font-size: 2vw;
+  text-decoration: none;
+  color: #ff8000;
+}
+.centrenav {
+  font-family: Gilroy-Medium;
+  width: 50vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.centrenav a {
+  text-decoration: none;
+  color: #333;
+  font-size: 0.9vw;
+  font-weight: 400;
+}
+.search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 12vw;
+  height: 2.5vw;
+  border-radius: 5px;
+  background-color: #ffff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.search input {
+  padding: 0.5vw 1vw;
+  outline: none;
+  border: none;
+  background: none;
+}
+.search i {
+  font-size: 1vw;
+}
+.cart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.5vw;
+  height: 2.5vw;
+  background-color: #ff8000;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.main-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.lft {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2vh;
+  padding-left: 9vw;
+  width: 60%;
+  height: 100%;
+  gap: 3vw;
+}
+.lft h1 {
+  font-size: 5vw;
+  font-family: Gilroy-Black;
+  color: #333;
+}
+.lft h1:nth-child(2) {
+  font-family: Gilroy-Light;
+}
+.lft p {
+  width: 40vw;
+  text-align: justify;
+  color: #85848477;
+}
+.lft .search {
+  width: 23vw;
+  justify-content: space-between;
+  padding: 1.5vw 2vw;
+}
+.lft .search input {
+  width: 15vw;
+}
+.lft .search i {
+  color: #ff8000bd;
+}
+
+.lft button {
+  width: 8vw;
+  padding: 1vw 2vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ff8000;
+  color: #ffff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.rght {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#backgrnd {
+  width: 33vw;
+}
+#all-plate {
+  width: 30vw;
+  height: 30vw;
+  /*background-color: #FF8000;*/
+  position: absolute;
+  animation: circle 15s infinite linear;
+}
+#three {
+  width: 18vw;
+  position: absolute;
+  top: 0%;
+  left: -10%;
+  animation: circle 20s infinite linear;
+}
+#two {
+  width: 20vw;
+  position: absolute;
+  bottom: -20%;
+  right: 0%;
+  animation: circle 20s infinite linear;
+}
+
+#one {
+  width: 12vw;
+  position: absolute;
+  top: 10%;
+  right: -5%;
+  animation: circle 20s infinite linear;
+}
+
+#glass {
+  position: absolute;
+  bottom: 10%;
+  right: 25%;
+  width: 20vw; 
+  height: 20vh;
+  background: rgba(0, 0, 0, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.144);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 10px;
+}
+#glass1{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 1vw
+}
+#glass1 i {
+   width: 3vw;
+}
+#glass h2{
+   font-family: Gilroy-Black;
+   text-decoration: underline;
+   align-items: center;
+   padding-left: 2vw;
+}
+
+#glass h3{
+   text-align: center;
+   padding-top: 1.5vh;
+   font-family: Gilroy-Light;
+}
+#glass p {
+   position: absolute;
+   top: 4vw;
+   text-align: justify;
+   padding-left: 1vw;
+   padding-right: 1vw;
+   font-family: Gilroy-Medium;
+   color: #333;
+}
+.ri-menu-3-line{
+   display: none;
+}
+.resp-nav{
+   display: none;
+}
+
+@keyframes circle {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}
+
+@media (max-width:500px) {
+   .lftnav a{
+      font-size: 10vw;
+      
+   }
+   .centrenav{
+      display: none;
+   }
+   #main{
+    height: auto;
+    min-height: 100vh;
+   }
+   
+   nav{
+      justify-content: space-between;
+      padding: 0vw 5vw;
+      align-items: center;
+   }
+   .rightnav{
+      display: none;
+   }
+   .ri-menu-3-line{
+      display: initial;
+      font-size: 5vw;
+   }
+   .resp-nav{
+      display: initial;
+      position: absolute;
+      top: 0;
+      right: -100%;
+      width: 100%;
+      height: 100%;
+      background-color: #FFFF;
+      z-index:9;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      gap: 5vh;
+      transition: all cubic-bezier(0.19, 1, 0.22, 1)1s;
+     
+
+   }
+   .resp-nav a{
+      text-decoration: none;
+      font-size: 5vw;
+      color: #333;
+   }
+   .resp-nav i {
+      position: absolute;
+      top: 3%;
+      font-size: 7vw;
+      right: 5%;
+   }
+  .main-content{
+    height: auto;
+    min-height: 100vh;
+    flex-direction:column-reverse ;
+  }
+ .rght{
+  width: 100%;
+  height: 60vh;
+ } 
+ #backgrnd{
+  width: 70vw;
+ }
+ #all-plate{
+  width: 50vw;
+  height: 50vw;
+ }
+ 
+ #two {
+  width: 40vw;
+  position: absolute;
+  bottom: -32%;
+  right: 20%;
+  animation: circle 20s infinite linear;
+}
+#one {
+  width: 30vw;
+  position: absolute;
+  top: 0%;
+  right: -20%;
+  animation: circle 20s infinite linear;
+}
+#three {
+  width: 28vw;
+  position: absolute;
+  top: 0%;
+  left: -30%;
+  animation: circle 20s infinite linear;
+}
+#glass{
+  bottom: 45%;
+  right: 18%;
+  width: 62vw;
+  height: 13vh;
+}
+.lft{
+  width: 100%;
+  height: 60vh;
+  gap: 1vh;
+}
+.lft h1{
+  font-size: 10vw;
+}
+.lft p{
+  width: 70vw;
+  font-size: 4vw;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+.lft .search{
+  padding: 1vw 2vw;
+  width: 70vw;
+  height: 10vw;
+}
+.lft .search input{
+  width: 70vw;
+}
+.lft .search i{
+  font-size: 5vw;
+}
+.lft button{
+  margin-top: 1.5vh;
+  width: 30vw;
+  height: 10vw;
+}
+#glass p{
+display: none;
+}
+#glass h3{
+  font-size: small;
+}
+}
